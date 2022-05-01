@@ -5,7 +5,7 @@ Problem Statement:
 
 Create a Fully Working Wallet(API based) Based on Nodejs
 
-- Tasks Included : 
+Tasks Included : 
 
 - Maintain User session with JWT token
 
