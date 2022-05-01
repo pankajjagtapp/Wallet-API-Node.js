@@ -7,17 +7,17 @@ Create a Fully Working Wallet(API based) Based on Nodejs
 
 - Tasks Included : 
 
-Maintain User session with JWT token
+- Maintain User session with JWT token
 
-Send Email Verification Mail to User on Signup
+- Send Email Verification Mail to User on Signup
 
-Login with Password/OTP
+- Login with Password/OTP
 
-Give Fake Balance on User Signup
+- Give Fake Balance on User Signup
 
-Manage Transfer Functionality between Users
+- Manage Transfer Functionality between Users
 
-Show Transaction Details (Admin/User View)
+- Show Transaction Details (Admin/User View)
 
-Send Transaction Success/Failure Details to User on Email
+- Send Transaction Success/Failure Details to User on Email
 
