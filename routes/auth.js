@@ -4,6 +4,7 @@ const { body } = require('express-validator');
 const User = require('../models/user');
 const authController = require('../controllers/auth');
 const transController = require('../controllers/transaction');
+const isAuth = require('../middleware/isAuth')
 
 const router = express.Router();
 
@@ -28,6 +29,6 @@ router.post(
 
 router.post('/login', authController.login);
 
-router.post('/login/transfer', transController.transfer);
+router.post('/login/transfer', isAuth, transController.transfer);
 
 module.exports = router;
