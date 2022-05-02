@@ -4,14 +4,14 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
 	service: 'gmail',
 	auth: {
-		user: 'pocketkahani@gmail.com',
-		pass: 'Baba@1968',
+		user: 'sample@gmail.com',
+		pass: 'xxxx',
 	},
 });
 
 const transFailed = () => {
 	var mailOptions = {
-		from: 'pocketkahani@gmail.com',
+		from: 'sample@gmail.com',
 		to: sender,
 		receiver,
 		subject: 'Transaction Failed',
@@ -21,7 +21,7 @@ const transFailed = () => {
 		if (error) {
 			console.log(error);
 		} else {
-			console.log('Email sent Successfully! ');
+			console.log('Email failed to send! ');
 		}
 	});
 };
@@ -33,7 +33,6 @@ exports.transfer = (req, res, next) => {
 
 	User.findOne({ email: receiver })
 		.then((receiver) => {
-			// let receiver = user2;
 			if (!receiver) {
 				const error = new Error(
 					'A user with this email could not be found.'
@@ -45,7 +44,6 @@ exports.transfer = (req, res, next) => {
 
 			User.findOne({ email: sender })
 				.then((sender) => {
-					// let sender = user1;
 					if (!sender) {
 						const error = new Error(
 							'A user with this email could not be found.'
@@ -72,7 +70,7 @@ exports.transfer = (req, res, next) => {
 		});
 
 	var mailOptions = {
-		from: 'pocketkahani@gmail.com',
+		from: 'sample@gmail.com',
 		to: sender,
 		receiver,
 		subject: 'Transaction Succeded',
