@@ -4,8 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 63a32408c380f17e93eae6f8749ffb565d110ffa
   },
   "keywords": [],
   "author": "",
@@ -19,7 +23,10 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.1",
+<<<<<<< HEAD
     "nodemailer": "^6.7.4",
+=======
+>>>>>>> 63a32408c380f17e93eae6f8749ffb565d110ffa
     "nodemon": "^2.0.15",
     "sib-api-v3-sdk": "^8.3.0"
   }
